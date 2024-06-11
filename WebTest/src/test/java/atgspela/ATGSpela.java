@@ -26,8 +26,8 @@ public class ATGSpela {
 		driver.findElement(By.xpath("//*[@id=\"react-root\"]/div/div/div[1]/div/div[1]/nav/div[2]/div/a[1]")).click();
 		driver.findElement(By.xpath("//*[@id=\"all-games-toggle\"]/div[1]")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//*[@id=\"main\"]/div[2]/div[3]/div/div/div/div/div/div[1]/a/header/div/div")).click();
-		
+		driver.findElement(By.xpath("//span[contains(text(),'V4')]")).click();
+		Thread.sleep(3000);
 		//Navigate to toggle menu, Select New Coupon and Confirm, Expand the coupon
 		{
 		      WebElement element = driver.findElement(By.tagName("body"));
