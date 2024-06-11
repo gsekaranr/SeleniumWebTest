@@ -3,6 +3,7 @@ package atgspela;
 import org.testng.annotations.Test;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -39,8 +40,12 @@ public class ATGSpela {
 	    driver.findElement(By.xpath("//button[contains(.,\'Bekräfta\')]")).click();
 	    driver.findElement(By.cssSelector(".horse-rbmufg-BettableContent-styles--expandCouponButton > span:nth-child(1)")).click();
 	    
-	    //Select the horses from coupon and place betting (Spela)
 	    Thread.sleep(5000);
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("window.scrollBy(0,350)", "");
+	    
+	    //Select the horses from coupon and place betting (Spela)
+	    Thread.sleep(3000);
 	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div[1]/span[1]/button\r\n"
 	    		+ "")).click();
 	    driver.findElement(By.cssSelector(".horse-1b18iui-CouponRace-styles--root:nth-child(1) span:nth-child(2) > .horse-1ee37nm-StartButtonWithTooltip-styles--button-StartButtonWithTooltip-styles--button")).click();
