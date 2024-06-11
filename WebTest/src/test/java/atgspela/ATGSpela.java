@@ -25,6 +25,7 @@ public class ATGSpela {
 		
 		driver.findElement(By.xpath("//*[@id=\"react-root\"]/div/div/div[1]/div/div[1]/nav/div[2]/div/a[1]")).click();
 		driver.findElement(By.xpath("//*[@id=\"all-games-toggle\"]/div[1]")).click();
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id=\"main\"]/div[2]/div[3]/div/div/div/div/div/div[1]/a/header/div/div")).click();
 		
 		//Navigate to toggle menu, Select New Coupon and Confirm, Expand the coupon
@@ -39,6 +40,7 @@ public class ATGSpela {
 	    driver.findElement(By.cssSelector(".horse-rbmufg-BettableContent-styles--expandCouponButton > span:nth-child(1)")).click();
 	    
 	    //Select the horses from coupon and place betting (Spela)
+	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div[1]/span[1]/button\r\n"
 	    		+ "")).click();
 	    driver.findElement(By.cssSelector(".horse-1b18iui-CouponRace-styles--root:nth-child(1) span:nth-child(2) > .horse-1ee37nm-StartButtonWithTooltip-styles--button-StartButtonWithTooltip-styles--button")).click();
@@ -50,8 +52,8 @@ public class ATGSpela {
 	    driver.findElement(By.cssSelector(".horse-1b18iui-CouponRace-styles--root:nth-child(4) .MuiButtonBase-root")).click();
 	    driver.findElement(By.cssSelector(".horse-5nvxvy-BetArea-styles--betButton")).click();
 		
-		//Delay execution for 10 sec & close the browser
-	    Thread.sleep(10000);
+		//Delay execution for 5 sec & close the browser
+	    Thread.sleep(5000);
 		driver.quit();
 	}
 		
