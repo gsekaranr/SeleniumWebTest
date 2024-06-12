@@ -41,6 +41,7 @@ public class ATGSpela {
 	    driver.findElement(By.cssSelector(".horse-rbmufg-BettableContent-styles--expandCouponButton > span:nth-child(1)")).click();
 	    
 	    Thread.sleep(5000);
+	    //Scroll down
 	    JavascriptExecutor js = (JavascriptExecutor) driver;
 	    js.executeScript("window.scrollBy(0,350)", "");
 	    
@@ -48,13 +49,13 @@ public class ATGSpela {
 	    Thread.sleep(3000);
 	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div[1]/span[1]/button\r\n"
 	    		+ "")).click();
-	    driver.findElement(By.cssSelector(".horse-1b18iui-CouponRace-styles--root:nth-child(1) span:nth-child(2) > .horse-1ee37nm-StartButtonWithTooltip-styles--button-StartButtonWithTooltip-styles--button")).click();
+	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div[1]/span[2]/button")).click();
 	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div[1]/span[3]/button")).click();
-	    driver.findElement(By.cssSelector(".horse-1b18iui-CouponRace-styles--root:nth-child(1) span:nth-child(4) > .horse-1ee37nm-StartButtonWithTooltip-styles--button-StartButtonWithTooltip-styles--button")).click();
-	    driver.findElement(By.cssSelector(".horse-1b18iui-CouponRace-styles--root:nth-child(2) span:nth-child(1) > .horse-1ee37nm-StartButtonWithTooltip-styles--button-StartButtonWithTooltip-styles--button")).click();
+	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div[1]/span[3]/button")).click();
+	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[2]/div[2]/div[1]/span[1]/button")).click();
 	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[3]/div[2]/div[1]/span[1]/button")).click();
 	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[3]/div[2]/div[1]/span[2]/button")).click();
-	    driver.findElement(By.cssSelector(".horse-1b18iui-CouponRace-styles--root:nth-child(4) .MuiButtonBase-root")).click();
+	    driver.findElement(By.xpath("//*[@id=\"main\"]/div[4]/div/div/div/div/div/div/div/div[4]/div/div/div/div[2]/div/div/div/div[2]/div/div[4]/div[2]/div[2]/button")).click();
 	    driver.findElement(By.cssSelector(".horse-5nvxvy-BetArea-styles--betButton")).click();
 		
 		//Delay execution for 5 sec & close the browser
